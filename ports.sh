@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "Network Open Port:" 
-lsof -i -P|grep -i listen
+echo "Network Open Port:"
+lsof -i -P | grep -i listen | awk '!($4="");' | awk '!($5="");' | awk '!($5="");' |  column -t -s ' '
