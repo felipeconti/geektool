@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Change this to en0 for an ethernet connection instead of airport
-INTF=en1
+INTF=en0
 
 # get the current number of bytes in and bytes out
 sample1=(`/usr/sbin/netstat -bI $INTF | awk "/$INTF/"'{print $7" "$10; exit}'`)
