@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/sh
+
+echo —————— Network:——————
 
 # Change this to en0 for an ethernet connection instead of airport
 INTF=en0
